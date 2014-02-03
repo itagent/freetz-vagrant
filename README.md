@@ -1,7 +1,7 @@
 freetz-vagrant
 ==============
 
-a Vagrant development environment for freet
+a Vagrant development environment for freetz
 
 Usage
 ==============
