@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: true
+  vars:
+    timezone: Europe/Berlin
+  tasks:
+    - include: tasks/main.yml
+    - include: tasks/freetz.yml
