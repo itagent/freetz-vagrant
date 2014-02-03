@@ -10,5 +10,5 @@ Usage
 2. cd freetz-vagrant
 3. vagrant up
 4. vagrant ssh
-5. cd /freetzsrc/src
+5. cd /freetz/src
 6. make menuconfig
