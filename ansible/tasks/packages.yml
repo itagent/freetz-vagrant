@@ -36,6 +36,12 @@
     - openssh-server
     - ack-grep
     - unzip
+    - imagemagick
+    - mktemp
+    - patchutils
+    - libusb-dev
+    - xz-utils
+    - perl
     - build-essential
     - autoconf
     - automake
