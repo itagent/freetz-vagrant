@@ -19,52 +19,55 @@
 - name: General | Install required packages.
   action: apt pkg={{ item }} state=latest
   with_items:
-    - python-pycurl
-    - python-apt
-    - python-pip
-    - python-software-properties
-    - git-core
     - ack-grep
-    - ngrep
-    - iotop
-    - htop
-    - di
-    - zsh
-    - vim
-    - tmux
-    - wget
-    - openssh-server
     - ack-grep
-    - unzip
-    - imagemagick
-    - mktemp
-    - patchutils
-    - libusb-dev
-    - xz-utils
-    - perl
-    - build-essential
     - autoconf
     - automake
-    - libtool
-    - libncurses5-dev
-    - lib32ncurses5-dev
-    - libc6-dev-i386
-    - gcc-multilib
-    - zlib1g-dev
-    - flex
     - bison
-    - patch
-    - texinfo
-    - tofrodos
-    - gettext
-    - jam
-    - pkg-config
-    - fastjar
-    - realpath
-    - libstring-crc32-perl
-    - gawk
-    - python
-    - subversion
+    - build-essential
     - bzip2
+    - di
+    - fastjar
+    - flex
+    - gawk
+    - gcc-multilib
+    - gettext
+    - git-core
+    - htop
+    - imagemagick
+    - iotop
+    - jam
+    - lib32ncurses5-dev
     - libacl1-dev
+    - libc6-dev-i386
     - libcap-dev
+    - libncurses5-dev
+    - libreadline6-dev
+    - libstring-crc32-perl
+    - libtool
+    - libtool-bin
+    - libusb-dev
+    - mktemp
+    - ngrep
+    - openssh-server
+    - patch
+    - patchutils
+    - perl
+    - pkg-config
+    - python
+    - python-apt
+    - python-pip
+    - python-pycurl
+    - python-software-properties
+    - realpath
+    - ruby
+    - subversion
+    - texinfo
+    - tmux
+    - tofrodos
+    - unzip
+    - vim
+    - wget
+    - xz-utils
+    - zlib1g-dev
+    - zsh

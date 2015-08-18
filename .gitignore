@@ -1,2 +1,4 @@
-vagrant_ansible_inventory_default
-freetzsrc/*
+*~
+.vagrant
+config
+images
