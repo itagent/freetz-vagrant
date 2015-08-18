@@ -15,4 +15,14 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ---
 - name: clone freetz repo
-  subversion: repo=http://svn.freetz.org/trunk dest=/freetz/src
+  subversion: repo={{ freetz_svn_url }} dest=freetz
+  sudo: no
+- name: link images directory to shared vagrant directory
+  file: src=/vagrant/images dest=freetz/images state=link
+  sudo: no
+- name: On login, symlink /vagrant/config to ~/freetz/config if it does not exist
+  lineinfile: dest=.profile state=present insertafter=EOF line='if [ ! -L ~/freetz/.config ]; then mv ~/freetz/.config ~/freetz/.config.old; ln -s /vagrant/config ~/freetz/.config; fi'
+  sudo: no
+- name: On logout, copy ~/freetz/config to /vagrant/config if it is newer
+  lineinfile: dest=.bash_logout state=present insertafter=EOF line='if [ ! -L ~/freetz/.config ]; then cp -u ~/freetz/.config /vagrant/config; fi'
+  sudo: no
